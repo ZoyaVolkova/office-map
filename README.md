@@ -6,5 +6,5 @@
 - круговая диаграмма с подразделениями компании и количеством занятых мест на карте - vue-chartjs
 - форматирование даты - date-fns
 
-<img src="readme/map_1.png">
-<img src="readme/map_2.png">
+![Untitled](readme/map_1.png)
+![Untitled](readme/map_2.png)
