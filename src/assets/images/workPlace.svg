@@ -1,0 +1,49 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 15.05 14.1"
+>
+  <g class="table">
+    <g id="chear">
+      <path
+        d="M3.92 10.1c-.5 0-.38-.21-1-.23a.56.56 0 0 0-.63.54c0 .41.37.5.72.5a5.51 5.51 0 0 0 .76-.07 2.8 2.8 0 0 0 1-.3c.31-.19.25-.52 0-.55s-.47.17-.85.11z"
+        class="cls-1"
+        stroke="#9e9e9e"
+        stroke-width="0.5"
+      />
+      <rect
+        x="1.52"
+        y="4.52"
+        width="4.25"
+        height="5.06"
+        rx="1.26"
+        ry="1.26"
+        class="cls-1"
+        stroke="#9e9e9e"
+        stroke-width="0.5"
+      />
+      <path
+        d="M3.92 4c-.5 0-.38.21-1 .23a.56.56 0 0 1-.63-.54c0-.41.37-.5.72-.5a5.51 5.51 0 0 1 .76.06 2.8 2.8 0 0 1 1 .3c.31.19.25.52 0 .55S4.3 4 3.92 4zM.73 4.89a.68.68 0 0 1 .68.68v2.75A.68.68 0 0 1 .73 9a.68.68 0 0 1-.68-.68V5.57a.68.68 0 0 1 .68-.68z"
+        class="cls-1"
+        stroke="#9e9e9e"
+        stroke-width="0.5"
+      />
+    </g>
+    <path
+      d="M6 .05h9v14H6z"
+      class="cls-1 table-block"
+      stroke="#9e9e9e"
+      stroke-width="0.5"
+    />
+    <rect
+      x="0.050000011920928955"
+      y="0.05000000447034836"
+      width="14.949999809265137"
+      height="14"
+      fill="transparent"
+      id="K24"
+      class="wrapper-table"
+    />
+
+    <path class="placeholder-empty" />
+  </g>
+</svg>

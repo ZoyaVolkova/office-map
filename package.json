@@ -1,0 +1,33 @@
+{
+  "name": "map-start-layout",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.0",
+    "core-js": "^3.6.5",
+    "d3": "^7.1.1",
+    "date-fns": "^2.25.0",
+    "normalize.css": "^8.0.1",
+    "vue": "^2.6.11",
+    "vue-chartjs": "^3.5.1",
+    "vue-svg-loader": "^0.16.0",
+    "vuedraggable": "^2.24.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^2.2.1",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
