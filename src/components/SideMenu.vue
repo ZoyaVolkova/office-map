@@ -3,13 +3,13 @@
     <div class="toolbar">
       <div class="toolbar__header">
         <template v-if="!isUserOpenned">
-          <h3>Информация</h3>
+          <h3>Information</h3>
         </template>
         <template v-else>
           <div class="action">
             <div class="arrow" @click="closeProfile"></div>
           </div>
-          <h3>Профиль</h3>
+          <h3>Profile</h3>
         </template>
       </div>
       <div class="toolbar__actions"></div>
@@ -29,7 +29,7 @@
               />
             </Draggable>
           </div>
-          <span v-else class="legend--empty"> Список пуст </span>
+          <span v-else class="legend--empty">The list is empty</span>
         </div>
         <div class="legend__chart">
           <div class="date">
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div v-show="isUserOpenned" class="profile">
-        <div v-if="!person" class="profile__empty">Место пустое</div>
+        <div v-if="!person" class="profile__empty">The place is empty</div>
 
         <PersonCard v-else :person="person" />
       </div>
@@ -49,14 +49,14 @@
 </template>
 
 <script>
-import LegendItem from './SideMenu/LegendItem.vue'
-import PersonCard from './SideMenu/PersonCard.vue'
-import { Doughnut as PieChart } from 'vue-chartjs'
-import Draggable from 'vuedraggable'
-import legend from '@/assets/data/legend.json'
-import { format } from 'date-fns'
-import people from '../assets/data/people.json'
-import tables from '../assets/data/tables.json'
+import LegendItem from "./SideMenu/LegendItem.vue";
+import PersonCard from "./SideMenu/PersonCard.vue";
+import { Doughnut as PieChart } from "vue-chartjs";
+import Draggable from "vuedraggable";
+import legend from "@/assets/data/legend.json";
+import { format } from "date-fns";
+import people from "../assets/data/people.json";
+import tables from "../assets/data/tables.json";
 
 export default {
   props: {
@@ -79,30 +79,30 @@ export default {
     return {
       legend: [],
       people: [],
-    }
+    };
   },
 
   created() {
-    this.loadLegend()
+    this.loadLegend();
   },
   mounted() {
-    this.makeChart()
-    this.people = people
+    this.makeChart();
+    this.people = people;
   },
   computed: {
     formatedDate() {
-      return format(new Date(), 'dd.MM.yyyy HH:mm')
+      return format(new Date(), "dd.MM.yyyy HH:mm");
     },
   },
   methods: {
     countTables(item) {
-      return tables.filter((table) => table.group_id === item.group_id).length
+      return tables.filter((table) => table.group_id === item.group_id).length;
     },
     loadLegend() {
-      this.legend = legend
+      this.legend = legend;
     },
     closeProfile() {
-      this.$emit('update:isUserOpenned', false)
+      this.$emit("update:isUserOpenned", false);
     },
     makeChart() {
       const legendChartData = {
@@ -111,23 +111,23 @@ export default {
           {
             backgroundColor: this.legend.map((legendItem) => legendItem.color),
             data: this.legend.map((legendItem) => {
-              return this.countTables(legendItem)
+              return this.countTables(legendItem);
             }),
           },
         ],
-      }
+      };
 
       const options = {
-        borderWidth: '10px',
+        borderWidth: "10px",
         legend: {
           display: false,
         },
-      }
+      };
 
-      this.$refs.chart.renderChart(legendChartData, options)
+      this.$refs.chart.renderChart(legendChartData, options);
     },
   },
-}
+};
 </script>
 
 <style scoped>

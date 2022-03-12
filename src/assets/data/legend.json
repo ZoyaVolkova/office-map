@@ -2,21 +2,21 @@
   {
     "group_id": 0,
     "color": "blueviolet",
-    "text": "Подразделение 1"
+    "text": "Department 1"
   },
   {
     "group_id": 1,
     "color": "blue",
-    "text": "Подразделение 2"
+    "text": "Department 2"
   },
   {
     "group_id": 2,
     "color": "violet",
-    "text": "Подразделение 3"
+    "text": "Department 3"
   },
   {
     "group_id": 3,
     "color": "deeppink",
-    "text": "Подразделение 4"
+    "text": "Department 4"
   }
 ]

@@ -9,15 +9,15 @@
       </div>
 
       <div class="person__info-email">
-        <span class="bold">Почта: </span><br />
+        <span class="bold">E-mail: </span><br />
         {{ person.email }}
       </div>
       <div class="person__info-email">
-        <span class="bold">Дата регистрации:</span> <br />
+        <span class="bold">Date of registration:</span> <br />
         {{ formatedDate }}
       </div>
       <div class="person__info-about">
-        <span class="bold">О себе:</span> <br />
+        <span class="bold">About:</span> <br />
         {{ person.about }}
       </div>
     </div>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { format } from 'date-fns'
+import { format } from "date-fns";
 
 export default {
   props: {
@@ -36,10 +36,10 @@ export default {
   },
   computed: {
     formatedDate() {
-      return format(new Date(this.person.registered), 'dd.MM.yyyy HH:mm')
+      return format(new Date(this.person.registered), "dd.MM.yyyy HH:mm");
     },
   },
-}
+};
 </script>
 
 <style scoped>
