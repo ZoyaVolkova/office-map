@@ -1,10 +1,10 @@
 # office-map
-## Отрисовка карты офиса и круговой диаграммы Vue.js с использованием библиотек D3.js, vue-chartjs, vuedraggable
-- загрузка из JSON информации о расположении рабочих столов сотрудников в соответствии с их подразделением
-- отрисовка svg-изображений столов на svg-карте - D3.js
-- возможность менять очередность списка подразделения в боковом меню - vuedraggable
-- круговая диаграмма с подразделениями компании и количеством занятых мест на карте - vue-chartjs
-- форматирование даты - date-fns
+## Displaying office map and Vue.js pie chart using D3.js, vue-chartjs, vuedraggable libraries
+- loading info about the location of employees' desktops according to their departments from JSON
+- rendering svg images of tables on svg map - D3.js
+- the ability to change the order of the unit list in the side menu - vuedraggable
+- pie chart with company divisions and the number of occupied places on the map - vue-chartjs
+- date formatting - date-fns
 
 ![Untitled](readme/map_1.png)
 ![Untitled](readme/map_2.png)
